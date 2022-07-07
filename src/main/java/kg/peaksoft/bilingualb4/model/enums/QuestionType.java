@@ -1,0 +1,13 @@
+package kg.peaksoft.bilingualb4.model.enums;
+
+public enum QuestionType {
+    SELECT_REAL_ENGLISH_WORD,
+    LISTEN_AND_SELECT_WORD,
+    TYPE_WHAT_YOU_HEAR,
+    RECORD_SAYING,
+    DESCRIBE_IMAGE,
+    RESPOND_IN_AT_LEAST_N_WORDS,
+    HIGHLIGHTS_THE_ANSWER,
+    SELECT_MAIN_IDEA,
+    SELECT_THE_BEST_TITLE
+}

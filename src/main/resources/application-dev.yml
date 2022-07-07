@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bilingual
+    username: postgres
+    password: 1234
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 25
+    username: mailfromspringboot0@gmail.com
+    password: okm9ijnuhb
+    properties:
+      mail:
+        debug: true
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+    port: 5000
+    error:
+        include-message: always
+application:
+  jwt:
+    secret-key: HRlELXqpSB
+    token-prefix: Bearer
+    expiration-date-after-days: 30
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAZUNB65HREPAJOBNJ
+      secret-key: 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
+
+    region:
+      static: eu-central-1
+    stack:
+      auto: false
